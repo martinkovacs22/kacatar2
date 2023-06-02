@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   color: rgba(149, 57, 94);
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+a.nav-link {
+
+    color: rgba(149, 57, 94);
+    }
+  
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+   
+  html::-webkit-scrollbar-track {
+    background: rgba(174, 169, 67, 0.396);
+    
+  }
+   
+  html::-webkit-scrollbar-thumb {
+    background: rgba(55, 64, 119);
+    border-radius: 20px;
+  }
+.imgCim{
+    width: 100%;
+    height: auto;
+    image-resolution: unset;
+}
+.cimkeelött{
+    position: absolute;
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(174, 169, 67, 0.396);
+}
+.fixed{
+    position: fixed;
+}
+.formSearch{
+    position: relative;
+    width: 25%;
+    top: 15px;
+    left: 37.5%;
+
+}
+.inputFormSearch{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 6px 20px 9px rgba(0,0,0,0.65); 
+    box-shadow: 0px 6px 20px 9px rgba(0,0,0,0.65);
+    height: 40px;
+    padding: 10px;
+   
+      
+      
+}
+.inputFormSearch::placeholder{
+padding: 10px;
+
+font-style: oblique;
+}
+.searchData{
+  margin-top: 15px;
+  background-color: white;
+  height: max-content;
+  padding: 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px 9px rgba(0,0,0,0.65); 
+  box-shadow: 0px 6px 20px 9px rgba(0,0,0,0.65);
+}
+
+ html{
+    max-width: 100%;
+  }
+
+
+
+
+      
+  
+  
