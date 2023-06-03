@@ -1,5 +1,11 @@
 import { httpClient } from "../config/http/httpClient.js";
 import { fetchUser } from "../config/http/fetchUser.js";
+import { Location } from "../config/location/location.js";
+const LocationControll = new Location();
+
+function megrendel(id){
+    console.log(id);
+}
 
 window.addEventListener("load",(e)=>{
     e.preventDefault();
@@ -15,8 +21,25 @@ console.log(hashData);
             console.log(data);
         }else{
             console.log(data);
-            document.getElementById("cim").innerHTML = data.data.productName
-            document.getElementById("category").innerHTML = data.data.productName
+            if (data.data[0].imgURL == null) {
+                document.getElementById("productIMG").src = "../img/cim.PNG"
+            }
+            else{
+                document.getElementById("productIMG").src = data.data[0].imgURL
+            }
+            document.getElementById("cim").innerHTML = data.data[0].productName
+            document.getElementById("price").innerHTML = data.data[0].price +"Ft"
+            document.getElementById("category").innerHTML = "category: "+ data.data[0].category;
+            document.getElementById("kosar").addEventListener("click",(e)=>{
+                if (LocationControll.isActiceUser()) {
+                    megrendel(data.data[0].id);
+                }else{
+                    LocationControll.exit();
+                }
+                
+                
+                
+            })
         }
     })
 

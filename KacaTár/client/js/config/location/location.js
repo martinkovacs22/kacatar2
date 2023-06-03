@@ -9,11 +9,30 @@ export class Location{
         const http = new httpClient(fetchUser);
         http.loginByToken((err,result)=>{
             if (err) {
-                window.location = "/html/login.html";
+                window.location = "main.html";
             }
     })
 }else{
-    window.location = "/html/login.html";
+    window.location = "main.html";
+}
+    }
+    loginLets(){
+        window.location = "sign.html";
+    }
+    isActiceUser(){
+        const cookie = new CookieHandler();
+    if (cookie.get("token")) {
+        const http = new httpClient(fetchUser);
+        http.loginByToken((err,result)=>{
+            if (err) {
+                return false;
+            }
+            else{
+                return true;
+            }
+    })
+}else{
+    return false;
 }
     }
     start(){
@@ -23,7 +42,7 @@ export class Location{
         const http = new httpClient(fetchUser);
         http.loginByToken((err,result)=>{
             if (!err) {
-                window.location = "/html/main.html";
+                window.location = "main.html";
             }
     })
 }

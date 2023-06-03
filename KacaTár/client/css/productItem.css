@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   color: rgba(255, 252, 216);
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+h3{
+    padding-top: 12px ;
+}
+#productIMG{
+    border-radius: 20px;
+}
+.card{
+    width: 50%;
+    margin-top: 50px;
+    margin-left:25%;
+    border-radius: 20px;
+    background: rgba(54, 51, 119, 0.396);
+}
+body{
+    background: rgba(174, 169, 67, 0.396);
+}
