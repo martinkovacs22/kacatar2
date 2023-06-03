@@ -4,8 +4,8 @@ class Conn{
     private $pdo = '';
 
     function __construct(){
-        $host = '127.0.0.1';
-$db   = 'kacatár';
+        $host = 'localhost';
+$db   = 'kacatos';
 $user = 'root';
 $pass = '';
 $port = "3306";
