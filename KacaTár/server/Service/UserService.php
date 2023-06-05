@@ -38,7 +38,7 @@ class UserService{
             if ($this->emailvalidatok($data["email"])) {
                 if ( isset($this->model->login($data)['data'][0]["email"])) {
                     
-                    return array('err'=>false,'data'=>  $this->jwt->generateToken($this->model->login($data)['data'][0]));
+                    return array('err'=>false,'data'=>  UserService::$jwt->generateToken($this->model->login($data)['data'][0]));
                    // return $jwt->generateToken($this->model->login($data)['data'][0]); 
                 }
                 return false ; 
@@ -52,7 +52,7 @@ class UserService{
     }
     function loginServiceByToken($data){
         if (isset($data["token"])) {
-            $resutlToken = $this->jwt->verifyToken($data["token"]);
+            $resutlToken = UserService::$jwt->verifyToken($data["token"]);
             if ($resutlToken == false) {
                 return "fdf";
             } else {

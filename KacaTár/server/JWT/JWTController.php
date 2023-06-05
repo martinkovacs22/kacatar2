@@ -2,6 +2,8 @@
 
 require_once '../vendor/autoload.php';
 use \Firebase\JWT\JWT;
+use \Firebase\JWT\Key;
+
 
 class JwtGenerator {
     private $secretKey;
@@ -23,8 +25,9 @@ class JwtGenerator {
     public function verifyToken($token)
     {
         try {
-            $decoded = JWT::decode($token, $this->secretKey,['HS256']);
-            if ($decoded["exp"]> time()) {
+            $decoded = JWT::decode($token, new Key($this->secretKey,'HS256'));
+
+            if ($decoded->exp > time()) {
                 return $decoded;
             }else{
                 return false;
