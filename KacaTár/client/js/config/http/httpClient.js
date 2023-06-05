@@ -6,7 +6,7 @@ export class httpClient{
     }
 
     signUp(data,callback){
-        const url = "url";//átkell írni 
+        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/UserController.php";//átkell írni 
         this.fetchUser.post(url,data,(err,result)=>{
             if (err) {
                 console.log("nem sikerült a fetch eküldése");

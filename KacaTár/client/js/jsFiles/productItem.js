@@ -34,7 +34,7 @@ console.log(hashData);
                 if (LocationControll.isActiceUser()) {
                     megrendel(data.data[0].id);
                 }else{
-                    LocationControll.exit();
+                    LocationControll.loginLets();
                 }
                 
                 
