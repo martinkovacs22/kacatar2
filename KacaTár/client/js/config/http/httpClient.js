@@ -61,11 +61,12 @@ export class httpClient{
             console.log("fut");
             if (err) {
                 
-                callback(true,null)
+                callback(true,result)
             }
             else{
                 callback(err,result)
             }
         })
     }
+
 }
