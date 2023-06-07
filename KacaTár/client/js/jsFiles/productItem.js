@@ -29,7 +29,7 @@ console.log(hashData);
             }
             document.getElementById("cim").innerHTML = data.data[0].productName
             document.getElementById("price").innerHTML = data.data[0].price +"Ft"
-            document.getElementById("category").innerHTML = "category: "+ data.data[0].category;
+            document.getElementById("category").innerHTML = "category: "+ data.data[0].Category;
             document.getElementById("kosar").addEventListener("click",(e)=>{
                 if (LocationControll.isActiceUser()) {
                     megrendel(data.data[0].id);

@@ -6,7 +6,7 @@ export class httpClient{
     }
 
     signUp(data,callback){
-        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/UserController.php";//átkell írni 
+        const url = "http://localhost/Kacat%C3%A1r/kacatar2/KacaT%C3%A1r/server/Controller/UserController.php";//átkell írni 
         this.fetchUser.post(url,data,(err,result)=>{
             if (err) {
                 console.log("nem sikerült a fetch eküldése");
@@ -18,7 +18,7 @@ export class httpClient{
         })
     }
     login(data,callback){
-        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/UserController.php";//átkell írni 
+        const url = "http://localhost/Kacat%C3%A1r/kacatar2/KacaT%C3%A1r/server/Controller/UserController.php";//átkell írni 
         this.fetchUser.post(url,data,(err,result)=>{
             if (err) {
                 console.log("nem sikerült a fetch eküldése");
@@ -30,7 +30,7 @@ export class httpClient{
         })
     }
     getProductBySearchData(data,callback){
-        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/ProductController.php";
+        const url = "http://localhost/Kacat%C3%A1r/kacatar2/KacaT%C3%A1r/server/Controller/ProductController.php";
         this.fetchUser.post(url,data,(err,result)=>{
             console.log("fut");
             if (err) {
@@ -43,7 +43,7 @@ export class httpClient{
         })
     }
     getAllCategory(data,callback){
-        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/ProductController.php";
+        const url = "http://localhost/Kacat%C3%A1r/kacatar2/KacaT%C3%A1r/server/Controller/ProductController.php";
         this.fetchUser.post(url,data,(err,result)=>{
             console.log("fut");
             if (err) {
@@ -56,7 +56,7 @@ export class httpClient{
         })
     }
     getProductById(data,callback){
-        const url = "http://localhost/Kacatar/kacatar/KacaT%C3%A1r/server/Controller/ProductController.php";
+        const url = "http://localhost/Kacat%C3%A1r/kacatar2/KacaT%C3%A1r/server/Controller/ProductController.php";
         this.fetchUser.post(url,data,(err,result)=>{
             console.log("fut");
             if (err) {
