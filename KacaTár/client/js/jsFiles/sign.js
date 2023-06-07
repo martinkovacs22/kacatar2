@@ -18,7 +18,11 @@ http.login(data,(err,data)=>{
         console.error(data);
     }
     else{
-        console.log(data);
+        
+        const cookie = new CookieHandler();
+        cookie.add("token",data.data);
+        console.log(cookie.get("token"));
+        
     }
 })
 
