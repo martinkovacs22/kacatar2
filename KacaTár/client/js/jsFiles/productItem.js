@@ -32,6 +32,7 @@ console.log(hashData);
             document.getElementById("price").innerHTML = data.data[0].price +"Ft/ "+data.data[0].Measure
             document.getElementById("category").innerHTML = "category: "+ data.data[0].Category;
             document.getElementById("kosar").addEventListener("click",(e)=>{
+                e.preventDefault();
                 if (LocationControll.isActiceUser()) {
                     megrendel(data.data[0].id);
                 }else{
