@@ -29,7 +29,10 @@ console.log(hashData);
             }
             console.log(data.data[0]);
             document.getElementById("cim").innerHTML = data.data[0].productName
+
             document.getElementById("price").innerHTML = data.data[0].price +"Ft/ "+data.data[0].Measure
+
+
             document.getElementById("category").innerHTML = "category: "+ data.data[0].Category;
             document.getElementById("kosar").addEventListener("click",(e)=>{
                 e.preventDefault();
